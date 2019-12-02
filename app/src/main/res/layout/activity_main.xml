@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnAsyncTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="AsyncTask"
+        app:layout_constraintStart_toStartOf="@+id/btnThread"
+        app:layout_constraintTop_toBottomOf="@+id/btnThread" />
+
+    <Button
+        android:id="@+id/btnService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Service"
+        app:layout_constraintStart_toStartOf="@+id/btnAsyncTask"
+        app:layout_constraintTop_toBottomOf="@+id/btnAsyncTask" />
+
+    <Button
+        android:id="@+id/btnIntentService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Intent Service"
+        app:layout_constraintStart_toStartOf="@+id/btnService"
+        app:layout_constraintTop_toBottomOf="@+id/btnService" />
+
+    <Button
+        android:id="@+id/btnScheduler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Scheduler"
+        app:layout_constraintStart_toStartOf="@+id/btnIntentService"
+        app:layout_constraintTop_toBottomOf="@+id/btnIntentService" />
+
+    <Button
+        android:id="@+id/btnThread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Thread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
